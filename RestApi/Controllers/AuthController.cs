@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualBasic;
 using RestApi.Data;
+using RestApi.Dtos;
 using RestApi.Models;
 using RestApi.Models.Dto;
 using System;
@@ -32,8 +33,15 @@ namespace RestApi.Controllers
         
 
         [HttpPost("register")]
-        public IActionResult Register(User user)
+        public IActionResult Register(UserRegisterDto userRegisterDto)
         {
+            var user = new User
+            {
+                Username = userRegisterDto.Username,
+                Password = userRegisterDto.Password,
+                Role = userRegisterDto.Role
+            };
+        
             if (ModelState.IsValid == false)
             {
                 return BadRequest(ModelState);

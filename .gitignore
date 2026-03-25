@@ -49,3 +49,4 @@ package-lock.json
 package.json
 /RestApi/obj/Debug
 /RestApi/bin
+/RestApi/obj
