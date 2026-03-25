@@ -6,6 +6,7 @@
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/RestApi.runtimeconfig.json
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/RestApi.dll
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/RestApi.pdb
+/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/AutoMapper.dll
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/BCrypt.Net-Next.dll
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/Humanizer.dll
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
@@ -143,6 +144,7 @@
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.AssemblyInfo.cs
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.csproj.CoreCompileInputs.cache
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.sourcelink.json
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/rjimswa.dswa.cache.json
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
@@ -157,4 +159,3 @@
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.pdb
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.genruntimeconfig.cache
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/ref/RestApi.dll
-/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.sourcelink.json

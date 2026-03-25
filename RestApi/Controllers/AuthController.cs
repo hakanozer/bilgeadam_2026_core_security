@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
@@ -24,23 +25,20 @@ namespace RestApi.Controllers
         string name = "";
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
+        private readonly IMapper _mapper;
 
-        public AuthController(ApplicationDbContext context, IConfiguration configuration)
+        public AuthController(ApplicationDbContext context, IConfiguration configuration, IMapper mapper)
         {
             _configuration = configuration;
             _context = context;
+            _mapper = mapper;
         }
         
 
         [HttpPost("register")]
         public IActionResult Register(UserRegisterDto userRegisterDto)
         {
-            var user = new User
-            {
-                Username = userRegisterDto.Username,
-                Password = userRegisterDto.Password,
-                Role = userRegisterDto.Role
-            };
+            var user = _mapper.Map<User>(userRegisterDto);
         
             if (ModelState.IsValid == false)
             {
@@ -49,7 +47,8 @@ namespace RestApi.Controllers
             user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             _context.Users.Add(user);
             _context.SaveChanges();
-            return Ok(user);
+            var userResponse = _mapper.Map<UserRegisterDtoResponse>(user);
+            return Ok(userResponse);
         }
 
 

@@ -3,8 +3,12 @@ using RestApi.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using RestApi.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// AutoMapper ekle
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 // Add services to the container.
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
