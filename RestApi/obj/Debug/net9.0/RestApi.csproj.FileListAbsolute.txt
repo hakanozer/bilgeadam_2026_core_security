@@ -157,3 +157,4 @@
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.pdb
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.genruntimeconfig.cache
 /Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/ref/RestApi.dll
+/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/obj/Debug/net9.0/RestApi.sourcelink.json
