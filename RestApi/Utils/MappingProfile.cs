@@ -1,6 +1,7 @@
 using AutoMapper;
 using RestApi.Dtos;
 using RestApi.Models;
+using RestApi.Models.Dto;
 namespace RestApi.Utils
 {
     
@@ -11,6 +12,7 @@ namespace RestApi.Utils
             // User Profile
             CreateMap<UserRegisterDto, User>();
             CreateMap<User, UserRegisterDtoResponse>();
+            CreateMap<UserLoginDto, User>();
 
         }
     }

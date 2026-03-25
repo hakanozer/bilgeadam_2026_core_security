@@ -26,11 +26,13 @@ namespace RestApi.Controllers
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
+        private readonly AuthService _authService;
 
-        public AuthController(ApplicationDbContext context, IConfiguration configuration, IMapper mapper)
+        public AuthController(ApplicationDbContext context, IConfiguration configuration, IMapper mapper, AuthService authService)
         {
             _configuration = configuration;
             _context = context;
+            _authService = authService;
             _mapper = mapper;
         }
         
@@ -53,64 +55,29 @@ namespace RestApi.Controllers
 
 
         [HttpPost("login")]
-        public IActionResult Login(UserLoginDto userDto)
+        public async Task<IActionResult> Login(UserLoginDto userDto)
         {
-            var user = new User
+            var result = await _authService.LoginAsync(userDto);
+
+            if (!result.IsSuccess)
             {
-                Username = userDto.Username,
-                Password = userDto.Password
-            };
-            var existingUser = _context.Users.FirstOrDefault(u => u.Username == user.Username);
-            if (existingUser != null)
-            {
-                // Check if the password is correct
-                if (BCrypt.Net.BCrypt.Verify(user.Password, existingUser.Password))
-                {
-                    Console.WriteLine("Password is correct");
-                }
-                else
-                {
-                    return Unauthorized("Invalid password");
-                }
-            }
-            else
-            {
-                return NotFound("User not found");
+                if (result.Message == "User not found")
+                    return NotFound(result.Message);
+
+                return Unauthorized(result.Message);
             }
 
-            // Generate JWT token
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var JwtKey = _configuration.GetValue<string>("Jwt:Key") ?? "";
-            var key = Encoding.ASCII.GetBytes(JwtKey);
-
-            var tokenDescriptor = new SecurityTokenDescriptor
+            // Cookie burada set edilir (HTTP concern)
+            Response.Cookies.Append("jwt", result.Message, new CookieOptions
             {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.Name, existingUser.Username)
-                }),
-                Expires = DateTime.UtcNow.AddHours(1),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
-            if (tokenDescriptor != null)
-            {
-                ParseRole(existingUser.Role, tokenDescriptor);
-            }
-
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            var tokenString = tokenHandler.WriteToken(token);
-            existingUser.Password = null; // Remove password from the response
-            return Ok(new { Token = tokenString, User = existingUser });
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.Strict,
+                Expires = DateTime.UtcNow.AddHours(1)
+            });
+            return Ok(result.User);
         }
 
-        private void ParseRole(string roles, SecurityTokenDescriptor tokenDescriptor)
-        {
-            var roleList = roles.Split(',').Select(r => r.Trim()).ToList();
-            foreach (var role in roleList)
-            {
-                tokenDescriptor.Subject.AddClaim(new Claim(ClaimTypes.Role, role));
-            }
-        }
 
     }
 }
