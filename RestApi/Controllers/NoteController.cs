@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using RestApi.Data;
+using RestApi.Extensions;
 using RestApi.Models;
 using System.Linq;
 
@@ -11,6 +13,7 @@ namespace RestApi.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize(Roles = "Note")]
+    // [EnableCors(CorsExtensions.CompanyA)]
     public class NoteController : ControllerBase
     {
         private readonly ApplicationDbContext _context;

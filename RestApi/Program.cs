@@ -17,20 +17,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<AuthService, AuthService>();    
 builder.Services.AddControllers();
 
-var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-    policy  =>
-    {
-        policy.WithOrigins(
-        "http://localhost:5120/"
-        )
-        .AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials();
-    });
-});
+// Add CORS policies
+builder.Services.AddCustomCors();
 
 // JWT Authentication
 builder.Services.AddJwtAuthentication(builder.Configuration);
@@ -38,7 +26,7 @@ builder.Services.AddJwtAuthentication(builder.Configuration);
 var app = builder.Build();
  
 // Configure Cors policy
-app.UseCors(MyAllowSpecificOrigins);
+app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();

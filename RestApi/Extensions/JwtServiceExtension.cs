@@ -38,6 +38,7 @@ namespace RestApi.Extensions
                         ValidateIssuer = false,
                         ValidateAudience = false
                     };
+
                 });
 
             return services;
