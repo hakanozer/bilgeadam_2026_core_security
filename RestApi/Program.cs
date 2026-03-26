@@ -5,6 +5,8 @@ using RestApi.Extensions;
 using RestApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddSingleton<RedisService>();
+builder.Services.AddSingleton<RateLimitService>();
 
 // AutoMapper ekle
 builder.Services.AddAutoMapper(typeof(MappingProfile));
@@ -31,5 +33,7 @@ app.UseAuthorization();
 app.UseMiddleware<GlobalExceptionMiddleware>();
 // Global request logging middleware
 app.UseMiddleware<GlobalMiddleware>();
+// Custom rate limiting middleware
+app.UseMiddleware<CustomRateLimitMiddleware>();
 app.MapControllers();
 app.Run();
