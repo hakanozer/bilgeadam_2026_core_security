@@ -77,4 +77,13 @@ public class AuthService
             tokenDescriptor.Subject.AddClaim(new Claim(ClaimTypes.Role, role));
         }
     }
+
+    public async Task<(bool IsSuccess, string Message, User? User)> LoginAsyncUser(UserLoginDto userDto)
+    {
+        var user = _context.Users.FromSqlInterpolated($"SELECT * FROM Users WHERE Username = {userDto.Username} and Password = {userDto.Password}").FirstOrDefault();
+        if (user == null)
+            return (false, "User not found", null);
+        return (true, "User logged in successfully", user);
+    }
+    
 }

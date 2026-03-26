@@ -11,8 +11,8 @@ namespace RestApi.Models.Dto
         public string Username { get; set; } = string.Empty;
 
         [Required]
-        [StringLength(maximumLength: 10, MinimumLength = 5, ErrorMessage = "Password must be between 5 and 10 characters")]
-        [RegularExpression(@"^[a-zA-Z0-9]+$", ErrorMessage = "Password must be alphanumeric")]
+        //[StringLength(maximumLength: 10, MinimumLength = 5, ErrorMessage = "Password must be between 5 and 10 characters")]
+        //[RegularExpression(@"^[a-zA-Z0-9]+$", ErrorMessage = "Password must be alphanumeric")]
         public string Password { get; set; } = string.Empty;
 
         public string City { get; set; } = string.Empty;

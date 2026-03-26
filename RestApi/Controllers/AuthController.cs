@@ -79,5 +79,21 @@ namespace RestApi.Controllers
         }
 
 
+        [HttpPost("loginUser")]
+        public async Task<IActionResult> LoginUser(UserLoginDto userDto)
+        {
+            var result = await _authService.LoginAsyncUser(userDto);
+
+            if (!result.IsSuccess)
+            {
+                if (result.Message == "User not found")
+                    return NotFound(result.Message);
+
+                return Unauthorized(result.Message);
+            }
+
+            return Ok(result.User);
+        }
+
     }
 }
