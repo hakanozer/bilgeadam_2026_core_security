@@ -29,5 +29,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 // Global exception handling middleware
 app.UseMiddleware<GlobalExceptionMiddleware>();
+// Global request logging middleware
+app.UseMiddleware<GlobalMiddleware>();
 app.MapControllers();
 app.Run();
