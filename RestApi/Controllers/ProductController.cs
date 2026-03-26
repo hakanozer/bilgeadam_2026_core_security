@@ -22,6 +22,8 @@ namespace RestApi.Controllers
         [HttpPost]
         public IActionResult Create(Product product)
         {
+            //int div = 0;
+            //int i = 1 / div;
             _context.Products.Add(product);
             _context.SaveChanges();
             return Ok(product);

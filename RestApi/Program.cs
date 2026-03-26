@@ -1,10 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using RestApi.Data;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
 using RestApi.Utils;
 using RestApi.Extensions;
+using RestApi.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,5 +27,7 @@ var app = builder.Build();
 app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
+// Global exception handling middleware
+app.UseMiddleware<GlobalExceptionMiddleware>();
 app.MapControllers();
 app.Run();
