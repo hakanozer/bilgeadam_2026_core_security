@@ -17,7 +17,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"Username\": \"ali@mail.com\",\n    \"Password\": \"12345\",\n    \"City\": \"ankara\"\n}",
+          "raw": "{\n    \"Username\": \"ali@mail.com\",\n    \"Password\": \"12345\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -41,13 +41,113 @@
       "response": []
     },
     {
+      "name": "User Sms Create",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5120/api/sms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5120",
+          "path": [
+            "api",
+            "sms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Sms Verify",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"SmsKey\": \"50252\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5120/api/sms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5120",
+          "path": [
+            "api",
+            "sms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "User Login User",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"Username\": \"ali@mail.com\",\n    //\"Password\": \"' or 1 = 1  --\",\n    \"Password\": \"$2a$11$pQZNjzU/PuMbQc39nNyJ.ODbd0vU/X9jlCN1BXGk5fdkupIVV0r4O\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5120/api/auth/loginUser",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5120",
+          "path": [
+            "api",
+            "auth",
+            "loginUser"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
       "name": "User Register",
       "request": {
         "method": "POST",
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"Username\": \"ali@mail.com\",\n    \"Password\": \"12345\"\n}",
+          "raw": "{\n    \"Username\": \"zehra@mail.com\",\n    \"Password\": \"123456\",\n    \"Role\": \"Product, Note\"\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -72,19 +172,24 @@
     },
     {
       "name": "Product List",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
       "request": {
         "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{JWT}}",
-              "type": "string"
-            }
-          ]
+          "type": "noauth"
         },
         "method": "GET",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
           "raw": "http://localhost:5120/api/product",
           "protocol": "http",
@@ -110,7 +215,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"Name\": \"iPad\",\n    \"Price\": 45000\n}",
+          "raw": "{\n    \"Name\": \"Macbook Air\",\n    \"Price\": 75000\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -166,14 +271,7 @@
       "name": "Add Note",
       "request": {
         "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsaUBtYWlsLmNvbSIsIm5iZiI6MTc0MTc3MTA4MiwiZXhwIjoxNzQxNzc0NjgyLCJpYXQiOjE3NDE3NzEwODJ9.LIKKhrWAEQY6b80S5YXVTtWYvU_DrYHPI4ez0KiMibQ",
-              "type": "string"
-            }
-          ]
+          "type": "noauth"
         },
         "method": "POST",
         "header": [
@@ -185,7 +283,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n    \"Content\": \"Hasan Toplantı Note\",\n    \"User\": {\n        \"Username\": \"ali@mail.com\",\n        \"Password\": \"12345\"\n    }\n}",
+          "raw": "{\n    \"Content\": \"Zehra Toplantı Note\",\n    \"User\": {\n        \"Username\": \"ali@mail.com\",\n        \"Password\": \"12345\"\n    }\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -212,14 +310,7 @@
       "name": "Note List",
       "request": {
         "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFsaUBtYWlsLmNvbSIsIm5iZiI6MTc0NjcwMjI3NiwiZXhwIjoxNzQ2NzA1ODc2LCJpYXQiOjE3NDY3MDIyNzZ9.QxIxUlmhaTrWBNthoYepYVA_ZSKCaxVNUKIIq1RHfpQ",
-              "type": "string"
-            }
-          ]
+          "type": "noauth"
         },
         "method": "GET",
         "header": [],
@@ -233,6 +324,26 @@
           "path": [
             "api",
             "note",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "hepsiburada",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://www.hepsiburada.com/",
+          "protocol": "https",
+          "host": [
+            "www",
+            "hepsiburada",
+            "com"
+          ],
+          "path": [
             ""
           ]
         }
