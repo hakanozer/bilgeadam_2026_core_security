@@ -4,24 +4,79 @@
   "runs": [
     {
       "tool": {
-        "name": "Microsoft (R) Visual C# Compiler",
+        "name": "Microsoft (R) Visual C# Derleyicisi",
         "version": "4.14.0.0",
         "fileVersion": "4.14.0-3.25262.10 (8edf7bcd)",
         "semanticVersion": "4.14.0",
-        "language": "en-US"
+        "language": "tr-TR"
       },
       "results": [
         {
+          "ruleId": "CS8765",
+          "level": "warning",
+          "message": "'value' parametresinin null atanabilirliği geçersiz kılınmış üyeyle eşleşmiyor (muhtemelen null atanabilirlik öznitelikleri nedeniyle).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 45,
+                  "endLine": 8,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "message": "Null atanamaz özellik 'SmsKey', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Dtos/SmsVerifyRequestDto.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 19,
+                  "endLine": 3,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Dtos/SmsVerifyRequestDto.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 19,
+                  "endLine": 3,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Users', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 16,
@@ -34,7 +89,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 28,
@@ -51,14 +106,14 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Notes' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "message": "Null atanamaz özellik 'Notes', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 16,
@@ -71,7 +126,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 11,
                   "startColumn": 28,
@@ -88,14 +143,14 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Products' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "message": "Null atanamaz özellik 'Products', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
           "suppressionStates": [
             "suppressedInSource"
           ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 8,
                   "startColumn": 16,
@@ -108,7 +163,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Data/ApplicationDbContext.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
                 "region": {
                   "startLine": 12,
                   "startColumn": 31,
@@ -123,60 +178,123 @@
           }
         },
         {
-          "ruleId": "CS8603",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "Possible null reference return.",
+          "message": "Null atanamaz özellik 'Sms', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/CustomValids/CityValid.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Data/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 27,
+                  "endLine": 13,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'SmsKey', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Sms.cs",
                 "region": {
                   "startLine": 12,
-                  "startColumn": 24,
+                  "startColumn": 23,
                   "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Sms.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 23,
+                  "endLine": 12,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Salt', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya özellik değerini null atanabilir olarak bildirmeyi göz önünde bulundurun.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Sms.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Sms.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 23,
+                  "endLine": 14,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Olası null başvuru dönüşü.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 24,
+                  "endLine": 11,
                   "endColumn": 48
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possible null reference argument for parameter 's' in 'byte[] Encoding.GetBytes(string s)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Program.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 35,
-                  "endLine": 48,
-                  "endColumn": 84
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8625",
-          "level": "warning",
-          "message": "Cannot convert null literal to non-nullable reference type.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
-                "region": {
-                  "startLine": 124,
-                  "startColumn": 37,
-                  "endLine": 124,
-                  "endColumn": 41
                 }
               }
             }
@@ -188,16 +306,142 @@
         {
           "ruleId": "CS8602",
           "level": "warning",
-          "message": "Dereference of a possibly null reference.",
+          "message": "Olası bir null başvurunun başvurma işlemi.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
                 "region": {
-                  "startLine": 12,
-                  "startColumn": 18,
-                  "endLine": 12,
-                  "endColumn": 52
+                  "startLine": 13,
+                  "startColumn": 28,
+                  "endLine": 13,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Olası null başvuru dönüşü.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 20,
+                  "endLine": 34,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "'int int.Parse(string s)' içindeki 's' parametresi için olası null başvuru bağımsız değişkeni.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 36,
+                  "endLine": 35,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "'int int.Parse(string s)' içindeki 's' parametresi için olası null başvuru bağımsız değişkeni.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 78,
+                  "endLine": 52,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "Null sabit değer, boş değer atanamayan başvuru türüne dönüştürülemiyor.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 33,
+                  "endLine": 41,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Olası null başvuru dönüşü.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 20,
+                  "endLine": 60,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Bu zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak. 'await' işlecini kullanarak engelleyici olmayan API çağrılarını beklemeyi veya 'await Task.Run(...)' kullanarak bir arka plan iş parçacığında CPU bağlantılı iş yapmayı düşünün.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 69,
+                  "endLine": 81,
+                  "endColumn": 83
                 }
               }
             }
@@ -209,15 +453,15 @@
         {
           "ruleId": "CS0414",
           "level": "warning",
-          "message": "The field 'AuthController.name' is assigned but its value is never used",
+          "message": "'AuthController.name' alanı atanır ancak değeri hiçbir zaman kullanılmaz",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 23,
+                  "startLine": 25,
                   "startColumn": 16,
-                  "endLine": 23,
+                  "endLine": 25,
                   "endColumn": 20
                 }
               }
@@ -234,117 +478,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/ProductController.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 9,
-                  "endLine": 13,
-                  "endColumn": 46
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
-                "region": {
-                  "startLine": 15,
-                  "startColumn": 9,
-                  "endLine": 15,
-                  "endColumn": 53
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S125",
-          "level": "warning",
-          "message": "Remove this commented out code.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Program.cs",
-                "region": {
-                  "startLine": 70,
-                  "startColumn": 5,
-                  "endLine": 70,
-                  "endColumn": 72
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2933",
-          "level": "warning",
-          "message": "Make 'name' 'readonly'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
-                "region": {
-                  "startLine": 23,
-                  "startColumn": 16,
-                  "endLine": 23,
-                  "endColumn": 20
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1050",
-          "level": "note",
-          "message": "Declare types in namespaces",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Startup.cs",
-                "region": {
-                  "startLine": 7,
-                  "startColumn": 14,
-                  "endLine": 7,
-                  "endColumn": 21
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1050",
-          "level": "note",
-          "message": "Declare types in namespaces",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
-                "region": {
-                  "startLine": 1,
-                  "startColumn": 14,
-                  "endLine": 1,
-                  "endColumn": 36
+                  "startLine": 25,
+                  "startColumn": 13,
+                  "endLine": 25,
+                  "endColumn": 27
                 }
               }
             }
@@ -360,7 +499,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 12,
@@ -375,18 +514,18 @@
           }
         },
         {
-          "ruleId": "S1144",
+          "ruleId": "S2933",
           "level": "warning",
-          "message": "Remove the unused private field 'name'.",
+          "message": "Make 'name' 'readonly'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 23,
-                  "startColumn": 9,
-                  "endLine": 23,
-                  "endColumn": 26
+                  "startLine": 25,
+                  "startColumn": 16,
+                  "endLine": 25,
+                  "endColumn": 20
                 }
               }
             }
@@ -398,16 +537,37 @@
         {
           "ruleId": "CA1050",
           "level": "note",
-          "message": "Declare types in namespaces",
+          "message": "Ad alanlarında türleri bildirin",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/GlobalMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Dtos/SmsVerifyRequestDto.cs",
                 "region": {
-                  "startLine": 4,
+                  "startLine": 1,
                   "startColumn": 14,
-                  "endLine": 4,
+                  "endLine": 1,
                   "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/RateLimitEntry.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 14,
+                  "endLine": 1,
+                  "endColumn": 28
                 }
               }
             }
@@ -423,7 +583,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 29,
@@ -440,11 +600,11 @@
         {
           "ruleId": "CA1050",
           "level": "note",
-          "message": "Declare types in namespaces",
+          "message": "Ad alanlarında türleri bildirin",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 6,
                   "startColumn": 14,
@@ -459,18 +619,144 @@
           }
         },
         {
-          "ruleId": "S3903",
-          "level": "warning",
-          "message": "Move 'Startup' into a named namespace.",
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Startup.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/RateLimitRule.cs",
                 "region": {
-                  "startLine": 7,
+                  "startLine": 1,
                   "startColumn": 14,
-                  "endLine": 7,
-                  "endColumn": 21
+                  "endLine": 1,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/CustomRateLimitMiddleware.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 14,
+                  "endLine": 4,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/RateLimitService.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 14,
+                  "endLine": 4,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private field 'name'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 9,
+                  "endLine": 25,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4487",
+          "level": "warning",
+          "message": "Remove this unread private field '_configuration' or refactor the code to use its value.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 41,
+                  "endLine": 27,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 14,
+                  "endLine": 11,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'CustomRateLimitMiddleware' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/CustomRateLimitMiddleware.cs",
+                "region": {
+                  "startLine": 4,
+                  "startColumn": 14,
+                  "endLine": 4,
+                  "endColumn": 39
                 }
               }
             }
@@ -486,7 +772,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 6,
                   "startColumn": 14,
@@ -503,11 +789,11 @@
         {
           "ruleId": "S3903",
           "level": "warning",
-          "message": "Move 'GlobalMiddleware' into a named namespace.",
+          "message": "Move 'RateLimitService' into a named namespace.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/GlobalMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/RateLimitService.cs",
                 "region": {
                   "startLine": 4,
                   "startColumn": 14,
@@ -524,16 +810,121 @@
         {
           "ruleId": "S3903",
           "level": "warning",
-          "message": "Move 'ErrorHandlerMiddleware' into a named namespace.",
+          "message": "Move 'AuthService' into a named namespace.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Middleware/ErrorHandlerMiddleware.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 14,
+                  "endLine": 11,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/RedisService.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'RedisService' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/RedisService.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'SmsVerifyRequest' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Dtos/SmsVerifyRequestDto.cs",
                 "region": {
                   "startLine": 1,
                   "startColumn": 14,
                   "endLine": 1,
-                  "endColumn": 36
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'RateLimitRule' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/RateLimitRule.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 14,
+                  "endLine": 1,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'RateLimitEntry' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/RateLimitEntry.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 14,
+                  "endLine": 1,
+                  "endColumn": 28
                 }
               }
             }
@@ -549,11 +940,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/CustomValids/CityValid.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
                 "region": {
-                  "startLine": 5,
+                  "startLine": 6,
                   "startColumn": 18,
-                  "endLine": 5,
+                  "endLine": 6,
                   "endColumn": 27
                 }
               }
@@ -566,16 +957,58 @@
         {
           "ruleId": "S3993",
           "level": "warning",
-          "message": "Specify AttributeUsage on 'CityValid'.",
+          "message": "Specify AttributeUsage on 'RoleValid'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/CustomValids/CityValid.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
                 "region": {
-                  "startLine": 5,
+                  "startLine": 6,
                   "startColumn": 18,
-                  "endLine": 5,
+                  "endLine": 6,
                   "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1050",
+          "level": "note",
+          "message": "Ad alanlarında türleri bildirin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Startup.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 21
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3903",
+          "level": "warning",
+          "message": "Move 'Startup' into a named namespace.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Startup.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 14,
+                  "endLine": 7,
+                  "endColumn": 21
                 }
               }
             }
@@ -591,7 +1024,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 50,
@@ -604,7 +1037,7 @@
           "relatedLocations": [
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 31,
                   "startColumn": 50,
@@ -615,7 +1048,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 46,
                   "startColumn": 50,
@@ -626,7 +1059,7 @@
             },
             {
               "physicalLocation": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Migrations/20250311115221_InitialCreate.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Migrations/20250311115221_InitialCreate.cs",
                 "region": {
                   "startLine": 49,
                   "startColumn": 54,
@@ -652,33 +1085,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 10,
                   "startColumn": 25,
                   "endLine": 10,
                   "endColumn": 71
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1125",
-          "level": "warning",
-          "message": "Remove the unnecessary Boolean literal(s).",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
-                "region": {
-                  "startLine": 37,
-                  "startColumn": 36,
-                  "endLine": 37,
-                  "endColumn": 44
                 }
               }
             }
@@ -694,7 +1106,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 13,
@@ -709,76 +1121,13 @@
           }
         },
         {
-          "ruleId": "S2325",
-          "level": "warning",
-          "message": "Make 'Configure' a static method.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Startup.cs",
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 17,
-                  "endLine": 32,
-                  "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S6964",
           "level": "warning",
           "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Models/Product.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 20,
-                  "endLine": 8,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6964",
-          "level": "warning",
-          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Models/User.cs",
-                "region": {
-                  "startLine": 8,
-                  "startColumn": 20,
-                  "endLine": 8,
-                  "endColumn": 22
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S6964",
-          "level": "warning",
-          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Models/Note.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Note.cs",
                 "region": {
                   "startLine": 9,
                   "startColumn": 20,
@@ -799,7 +1148,49 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Models/Product.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Product.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 20,
+                  "endLine": 8,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Note.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 20,
+                  "endLine": 15,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/Product.cs",
                 "region": {
                   "startLine": 14,
                   "startColumn": 24,
@@ -820,12 +1211,12 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Models/Note.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Models/User.cs",
                 "region": {
-                  "startLine": 15,
+                  "startLine": 8,
                   "startColumn": 20,
-                  "endLine": 15,
-                  "endColumn": 26
+                  "endLine": 8,
+                  "endColumn": 22
                 }
               }
             }
@@ -841,11 +1232,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
                 "region": {
-                  "startLine": 65,
+                  "startLine": 45,
                   "startColumn": 36,
-                  "endLine": 65,
+                  "endLine": 45,
                   "endColumn": 44
                 }
               }
@@ -858,16 +1249,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'GenerateSecureKey' a static method.",
+          "message": "Make 'Configure' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Services/PasswordManager.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Startup.cs",
                 "region": {
-                  "startLine": 91,
-                  "startColumn": 19,
-                  "endLine": 91,
-                  "endColumn": 36
+                  "startLine": 32,
+                  "startColumn": 17,
+                  "endLine": 32,
+                  "endColumn": 26
                 }
               }
             }
@@ -883,7 +1274,7 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Startup.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Startup.cs",
                 "region": {
                   "startLine": 45,
                   "startColumn": 9,
@@ -904,11 +1295,11 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Program.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Program.cs",
                 "region": {
-                  "startLine": 92,
+                  "startLine": 39,
                   "startColumn": 1,
-                  "endLine": 92,
+                  "endLine": 39,
                   "endColumn": 10
                 }
               }
@@ -921,16 +1312,16 @@
         {
           "ruleId": "S2325",
           "level": "warning",
-          "message": "Make 'ParseRole' a static method.",
+          "message": "Make 'GenerateCode' a static method.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
                 "region": {
-                  "startLine": 128,
-                  "startColumn": 22,
-                  "endLine": 128,
-                  "endColumn": 31
+                  "startLine": 65,
+                  "startColumn": 24,
+                  "endLine": 65,
+                  "endColumn": 36
                 }
               }
             }
@@ -940,18 +1331,294 @@
           }
         },
         {
-          "ruleId": "S1481",
-          "level": "warning",
-          "message": "Remove the unused local variable 'i'.",
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Çağrılan yöntem art arda çağrılırsa ve geçirilen diziyi değiştirmezse 'static readonly' alanları sabit dizi bağımsız değişkenlerine tercih edilir",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/CustomValid/RoleValid.cs",
                 "region": {
-                  "startLine": 64,
-                  "startColumn": 17,
-                  "endLine": 64,
-                  "endColumn": 18
+                  "startLine": 19,
+                  "startColumn": 42,
+                  "endLine": 19,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "separator"
+            }
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'GenerateSecureKey' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/PasswordManager.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 19,
+                  "endLine": 91,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'Sha256' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 24,
+                  "endLine": 71,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'ReadRequestBodyAsync' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 36,
+                  "endLine": 63,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'ExtractJwtToken' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 24,
+                  "endLine": 45,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6960",
+          "level": "warning",
+          "message": "This controller has multiple responsibilities and could be split into 2 smaller controllers.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 18,
+                  "endLine": 23,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 42,
+                  "endLine": 58,
+                  "endColumn": 47
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 42,
+                  "endLine": 83,
+                  "endColumn": 51
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 30,
+                  "endLine": 41,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "May belong to responsibility #1.",
+              "1": "May belong to responsibility #1.",
+              "2": "May belong to responsibility #2."
+            }
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'ParseRole' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 18,
+                  "endLine": 72,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6966",
+          "level": "warning",
+          "message": "Await FirstOrDefaultAsync instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 20,
+                  "endLine": 83,
+                  "endColumn": 165
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1850",
+          "level": "note",
+          "message": "'ComputeHash' yerine statik 'System.Security.Cryptography.SHA256.HashData' yöntemini tercih edin",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 24,
+                  "endLine": 76,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 23,
+                  "endLine": 73,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "ComputeTypePropertyKey": "ComputeHash",
+              "DeleteHashCreationPropertyKey": "DeleteHashCreationPropertyKey",
+              "HashCreationIndexPropertyKey": "0",
+              "TargetHashTypeDiagnosticPropertyKey": "SHA256"
+            }
+          }
+        },
+        {
+          "ruleId": "ASP0015",
+          "level": "note",
+          "message": "The header 'Retry-After' can be accessed using the RetryAfter property",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/CustomRateLimitMiddleware.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 13,
+                  "endLine": 58,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderName": "Retry-After",
+              "ResolvedPropertyName": "RetryAfter"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "'ParseRole' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Services/AuthService.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 18,
+                  "endLine": 72,
+                  "endColumn": 27
                 }
               }
             }
@@ -963,16 +1630,16 @@
         {
           "ruleId": "CA1822",
           "level": "note",
-          "message": "Member 'ParseRole' does not access instance data and can be marked as static",
+          "message": "'GenerateCode' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/Controllers/AuthController.cs",
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
                 "region": {
-                  "startLine": 128,
-                  "startColumn": 22,
-                  "endLine": 128,
-                  "endColumn": 31
+                  "startLine": 65,
+                  "startColumn": 24,
+                  "endLine": 65,
+                  "endColumn": 36
                 }
               }
             }
@@ -980,13 +1647,203 @@
           "properties": {
             "warningLevel": 1
           }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "'Sha256' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Controllers/SmsController.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 24,
+                  "endLine": 71,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0015",
+          "level": "note",
+          "message": "The header 'Authorization' can be accessed using the Authorization property",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 30,
+                  "endLine": 48,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderName": "Authorization",
+              "ResolvedPropertyName": "Authorization"
+            }
+          }
+        },
+        {
+          "ruleId": "S2629",
+          "level": "warning",
+          "message": "Don't use string interpolation in logging message templates.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 36,
+                  "endLine": 40,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA2254",
+          "level": "note",
+          "message": "Günlük kaydı ileti şablonu ‘LoggerExtensions.LogInformation(ILogger, string?, params object?[])’ çağrıları arasında değişiklik göstermemelidir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 36,
+                  "endLine": 40,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0015",
+          "level": "note",
+          "message": "The header 'User-Agent' can be accessed using the UserAgent property",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 29,
+                  "endLine": 32,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderName": "User-Agent",
+              "ResolvedPropertyName": "UserAgent"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "'ReadRequestBodyAsync' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 36,
+                  "endLine": 63,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "'ExtractJwtToken' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalMiddleware.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 24,
+                  "endLine": 45,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "ASP0015",
+          "level": "note",
+          "message": "The header 'User-Agent' can be accessed using the UserAgent property",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/Middleware/GlobalExceptionMiddleware.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderName": "User-Agent",
+              "ResolvedPropertyName": "UserAgent"
+            }
+          }
         }
       ],
       "rules": {
+        "ASP0015": {
+          "id": "ASP0015",
+          "shortDescription": "Suggest using IHeaderDictionary properties",
+          "defaultLevel": "note",
+          "helpUri": "https://aka.ms/aspnet/analyzers",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true
+          }
+        },
         "CA1050": {
           "id": "CA1050",
-          "shortDescription": "Declare types in namespaces",
-          "fullDescription": "Types are declared in namespaces to prevent name collisions and as a way to organize related types in an object hierarchy.",
+          "shortDescription": "Ad alanlarında türleri bildirin",
+          "fullDescription": "Ad çakışmalarını engellemek amacıyla ve ilgili türleri bir nesne hiyerarşisinde düzenleme yöntemi olarak ad alanlarında türler bildirilir.",
           "defaultLevel": "note",
           "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1050",
           "properties": {
@@ -1001,8 +1858,8 @@
         },
         "CA1822": {
           "id": "CA1822",
-          "shortDescription": "Mark members as static",
-          "fullDescription": "Members that do not access instance data or call instance methods can be marked as static. After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code.",
+          "shortDescription": "Üyeleri statik olarak işaretleyin",
+          "fullDescription": "Örnek verilerine erişmeyen veya örnek yöntemlerini çağırmayan üyeler statik olarak işaretlenebilir. Yöntemleri statik olarak işaretledikten sonra, derleyici bu üyelere yönelik sanal olmayan çağrı konumlarını gösterir. Bu, performans açısından duyarlı kod için önemli ölçüde performans kazanımı sağlar.",
           "defaultLevel": "note",
           "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
           "properties": {
@@ -1015,9 +1872,54 @@
             ]
           }
         },
+        "CA1850": {
+          "id": "CA1850",
+          "shortDescription": "'ComputeHash' yerine statik 'HashData' yöntemini tercih edin",
+          "fullDescription": "'ComputeHash' çağırmak için HashAlgorithm örneği oluşturup yönetmek yerine statik 'HashData' yöntemini kullanmak daha verimlidir.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1850",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1861": {
+          "id": "CA1861",
+          "shortDescription": "Sabit dizileri bağımsız değişkenler olarak kullanmaktan sakının",
+          "fullDescription": "Bağımsız değişkenler olarak geçirilen sabit diziler art arda çağrıldığında yeniden kullanılmaz, yani her seferinde yeni bir dizi oluşturulur. Geçirilen dizi çağrılan yöntem içinde değiştirilmezse performansı iyileştirmek için 'static readonly' alanlarına ayıklamayı deneyin.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1861",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA2254": {
+          "id": "CA2254",
+          "shortDescription": "Şablon statik bir ifade olmalıdır",
+          "fullDescription": "Günlük ileti şablonu çağrılar arasında değişiklik göstermemelidir.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca2254",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
         "CS0414": {
           "id": "CS0414",
-          "shortDescription": "Field is assigned but its value is never used",
+          "shortDescription": "Alan atandı ancak değeri hiç kullanılmadı",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0414)",
           "properties": {
@@ -1029,9 +1931,23 @@
             ]
           }
         },
+        "CS1998": {
+          "id": "CS1998",
+          "shortDescription": "Zaman uyumsuz yöntemde 'await' işleçleri yok ve zaman uyumlu çalışacak",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1998)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
         "CS8602": {
           "id": "CS8602",
-          "shortDescription": "Dereference of a possibly null reference.",
+          "shortDescription": "Olası bir null başvurunun başvurma işlemi.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
           "properties": {
@@ -1045,7 +1961,7 @@
         },
         "CS8603": {
           "id": "CS8603",
-          "shortDescription": "Possible null reference return.",
+          "shortDescription": "Olası null başvuru dönüşü.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8603)",
           "properties": {
@@ -1059,7 +1975,7 @@
         },
         "CS8604": {
           "id": "CS8604",
-          "shortDescription": "Possible null reference argument.",
+          "shortDescription": "Olası null başvuru bağımsız değişkeni.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
           "properties": {
@@ -1073,7 +1989,7 @@
         },
         "CS8618": {
           "id": "CS8618",
-          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.",
+          "shortDescription": "Null atanamaz alan, oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. 'Gerekli' değiştiricisini ekleyin veya null atanabilir olarak bildirmeyi göz önünde bulundurun.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
           "properties": {
@@ -1087,9 +2003,23 @@
         },
         "CS8625": {
           "id": "CS8625",
-          "shortDescription": "Cannot convert null literal to non-nullable reference type.",
+          "shortDescription": "Null sabit değer, boş değer atanamayan başvuru türüne dönüştürülemiyor.",
           "defaultLevel": "warning",
           "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8765": {
+          "id": "CS8765",
+          "shortDescription": "Parametre türünün null atanabilirliği geçersiz kılınmış üyeyle eşleşmiyor (muhtemelen null atanabilirlik öznitelikleri nedeniyle).",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8765)",
           "properties": {
             "category": "Compiler",
             "isEnabledByDefault": true,
@@ -1176,23 +2106,6 @@
             ]
           }
         },
-        "S1481": {
-          "id": "S1481",
-          "shortDescription": "Unused local variables should be removed",
-          "fullDescription": "An unused local variable is a variable that has been declared but is not used anywhere in the block of code where it is defined. It is dead code, contributing to unnecessary complexity and leading to confusion when reading the code. Therefore, it should be removed from your code to maintain clarity and efficiency.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
-          "properties": {
-            "category": "Minor Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
         "S2325": {
           "id": "S2325",
           "shortDescription": "Methods and properties that don't access instance data should be static",
@@ -1206,6 +2119,22 @@
               "C#",
               "MainSourceScope",
               "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2629": {
+          "id": "S2629",
+          "shortDescription": "Logging templates should be constant",
+          "fullDescription": "Logging arguments should not require evaluation in order to avoid unnecessary performance overhead. When passing concatenated strings or string interpolations directly into a logging method, the evaluation of these expressions occurs every time the logging method is called, regardless of the log level. This can lead to inefficient code execution and increased resource consumption.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2629",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
               "SonarWay"
             ]
           }
@@ -1319,6 +2248,22 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6418",
           "properties": {
             "category": "Blocker Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6960": {
+          "id": "S6960",
+          "shortDescription": "Controllers should not have mixed responsibilities",
+          "fullDescription": "ASP.NET controllers should not have mixed responsibilities. Following the Single Responsibility Principle (SRP), they should be kept lean and focused on a single, separate concern. In short, they should have a single reason to change.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-6960",
+          "properties": {
+            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

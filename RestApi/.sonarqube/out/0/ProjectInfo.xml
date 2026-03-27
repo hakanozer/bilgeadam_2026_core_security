@@ -3,16 +3,16 @@
   <ProjectName>RestApi</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
   <ProjectType>Product</ProjectType>
-  <ProjectGuid>66bcb157-0d0b-430e-9a25-4665b3ec27bc</ProjectGuid>
-  <FullPath>/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/RestApi.csproj</FullPath>
+  <ProjectGuid>5a82c123-eca1-4f92-b6c6-67b1db8c11c0</ProjectGuid>
+  <FullPath>/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/RestApi.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
-  <AnalysisResults>
-    <AnalysisResult Id="FilesToAnalyze" Location="/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/.sonarqube/conf/0/FilesToAnalyze.txt" />
-  </AnalysisResults>
+  <AnalysisResultFiles>
+    <AnalysisResultFile Id="FilesToAnalyze" Location="/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/.sonarqube/conf/0/FilesToAnalyze.txt" />
+  </AnalysisResultFiles>
   <AnalysisSettings>
-    <Property Name="sonar.cs.roslyn.reportFilePaths">/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/.sonarqube/out/0/Issues.json</Property>
-    <Property Name="sonar.cs.analyzer.projectOutPaths">/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/.sonarqube/out/0</Property>
-    <Property Name="sonar.cs.scanner.telemetry">/Users/hakan/Documents/GitHub/ak_sigorta_2025_securtiy_2/RestApi/RestApi/.sonarqube/out/0/Telemetry.json</Property>
+    <Property Name="sonar.cs.roslyn.reportFilePaths">/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/.sonarqube/out/0/Issues.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPaths">/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/.sonarqube/out/0</Property>
+    <Property Name="sonar.cs.scanner.telemetry">/Users/hakan/Documents/GitHub/bilgeadam_2026_core_security/RestApi/.sonarqube/out/0/Telemetry.json</Property>
   </AnalysisSettings>
   <Configuration>Debug</Configuration>
   <Platform>AnyCPU</Platform>
